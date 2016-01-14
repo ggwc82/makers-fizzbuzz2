@@ -32,3 +32,10 @@ describe 'fizzbuzz' do
 	end
 end
 
+describe 'fizzbuzz' do
+	it 'returns "buzz" when passed any number multiple by 5 but not by 3' do
+		[10, 20, 40, 70].each do |x|
+			expect(fizzbuzz(x)).to eq 'buzz'
+		end
+	end
+end
