@@ -23,3 +23,12 @@ describe 'fizzbuzz' do
 		expect(fizzbuzz(50)).to eq 'buzz'
 	end
 end
+
+describe 'fizzbuzz' do
+	it 'returns number when passed a number not divisible by 3 or 5' do
+		[1, 2, 4, 7, 97, 98].each do |x|
+			expect(fizzbuzz(x)).to eq x
+		end
+	end
+end
+
